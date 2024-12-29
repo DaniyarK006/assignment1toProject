@@ -13,7 +13,7 @@ public class Student extends Person {
         this.id = idGenerator++;
     }
 
-    public Student(String name, String surname, int age, String genderString, List<Integer> grades) {
+    public Student(String name, String surname, int age, boolean genderString, List<Integer> grades) {
         super(name, surname, age, genderString);
         assignId();
         this.grades = new ArrayList<>(grades);
